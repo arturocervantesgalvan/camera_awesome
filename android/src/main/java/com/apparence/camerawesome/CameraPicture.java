@@ -104,7 +104,8 @@ public class CameraPicture implements CameraSession.OnCaptureSession, CameraSett
             return;
         }
         if(pictureImageReader == null){
-            refresh();
+            pictureImageReader = ImageReader.newInstance(size.getWidth(), size.getHeight(), ImageFormat.JPEG, 2);
+            mCameraSession.addPictureSurface(pictureImageReader.getSurface());
         }
         pictureImageReader.setOnImageAvailableListener(new ImageReader.OnImageAvailableListener() {
             @Override
