@@ -123,7 +123,7 @@ class CameraSetup {
                 (currentOrientation == ORIENTATION_UNKNOWN)
                         ? 0
                         : (facingFront) ? -currentOrientation : currentOrientation;
-        return (sensorOrientationOffset + sensorOrientation + 360) % 360;
+        return 0;
     }
 
     /**

@@ -54,20 +54,21 @@
 }
 
 - (UIImageOrientation)getJpegOrientation {
-    switch (_orientation) {
-        case UIDeviceOrientationPortrait:
-            return UIImageOrientationRight;
-            break;
-        case UIDeviceOrientationLandscapeRight:
-            return (_sensor == Back) ? UIImageOrientationUp : UIImageOrientationDown;
-            break;
-        case UIDeviceOrientationLandscapeLeft:
-            return (_sensor == Back) ? UIImageOrientationDown : UIImageOrientationUp;
-            break;
-        default:
-            return UIImageOrientationLeft;
-            break;
-    }
+    return UIImageOrientationRight
+    // switch (_orientation) {
+    //     case UIDeviceOrientationPortrait:
+    //         return UIImageOrientationRight;
+    //         break;
+    //     case UIDeviceOrientationLandscapeRight:
+    //         return (_sensor == Back) ? UIImageOrientationUp : UIImageOrientationDown;
+    //         break;
+    //     case UIDeviceOrientationLandscapeLeft:
+    //         return (_sensor == Back) ? UIImageOrientationDown : UIImageOrientationUp;
+    //         break;
+    //     default:
+    //         return UIImageOrientationLeft;
+    //         break;
+    // }
 }
 
 @end
