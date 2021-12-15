@@ -54,7 +54,7 @@
 }
 
 - (UIImageOrientation)getJpegOrientation {
-    return UIImageOrientationRight
+    return UIImageOrientationRight;
     // switch (_orientation) {
     //     case UIDeviceOrientationPortrait:
     //         return UIImageOrientationRight;
